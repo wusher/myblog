@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="en ">
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Today I Learned | My Notes</title>
+<title>Unregister Service Workers | My Notes</title>
 
 <meta name="description" content="My Notes" />
 
-<link rel="stylesheet" href="/myblog/_bridgetown/static/index.57RFCWDI.css" />
+<link rel="stylesheet" href="/myblog/_bridgetown/static/index.43P6RRBI.css" />
 <script src="/myblog/_bridgetown/static/index.OFZUQMLF.js" defer></script>
 <script type="module">let lastmod = 0
 function startReloadConnection() {
@@ -40,7 +40,7 @@ setTimeout(() => {
 </script>
 
   </head>
-  <body class="post  antialiased bg-slate-50">
+  <body class="post  antialiased bg-slate-50/50">
     <div class="bg-slate-600 text-slate-50 font-medium flex p-4">
   <h1>
     <a href="/myblog/">
@@ -62,14 +62,30 @@ setTimeout(() => {
   <div class="relative px-4  lg:px-6">
     <div class="text-lg max-w-prose mx-auto">
       <h2>
-        <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-slate-700 sm:text-4xl">Today I Learned</span>
+        <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-slate-700 sm:text-4xl">Unregister Service Workers</span>
 
       </h2>
       <div class="flex justify-center mt-4 space-x-4">
+          <span class="tag_badge tag_lg" >
+          pwa
+          </span>
+          <span class="tag_badge tag_lg" >
+          js
+          </span>
       </div>
     </div>
     <div class="mt-4 prose prose-sky prose-2xl  mx-auto">
-      <p>My content</p>
+      <p>A little bit of code to unregister all service workers:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nb">navigator</span><span class="p">.</span><span class="nx">serviceWorker</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nb">navigator</span><span class="p">.</span><span class="nx">serviceWorker</span><span class="p">.</span><span class="nx">getRegistrations</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">registrations</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">registration</span> <span class="k">of</span> <span class="nx">registrations</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">registration</span><span class="p">.</span><span class="nx">unregister</span><span class="p">();</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
 
     </div>
   </div>
