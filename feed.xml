@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.1.0">Bridgetown</generator><link href="https://wusher.github.io/myblog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wusher.github.io/myblog/" rel="alternate" type="text/html" /><updated>2022-09-01T17:12:40+00:00</updated><id>https://wusher.github.io/myblog/feed.xml</id><title type="html">My Notes</title><subtitle>My Notes</subtitle><author><name>wusher</name></author><entry><title type="html">Unregister Service Workers</title><link href="https://wusher.github.io/myblog/til/blog/2022/09/01/2022-09-01_unregistering-service-workers/" rel="alternate" type="text/html" title="Unregister Service Workers" /><published>2022-09-01T08:01:01+00:00</published><updated>2022-09-01T08:01:01+00:00</updated><id>repo://posts.collection/_posts/2022-09-01_unregistering-service-workers.md</id><content type="html" xml:base="https://wusher.github.io/myblog/til/blog/2022/09/01/2022-09-01_unregistering-service-workers/">&lt;p&gt;A little bit of code to unregister all service workers:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://bridgetownrb.com/" version="1.1.0">Bridgetown</generator><link href="https://wusher.github.io/myblog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wusher.github.io/myblog/" rel="alternate" type="text/html" /><updated>2022-09-01T17:23:42+00:00</updated><id>https://wusher.github.io/myblog/feed.xml</id><title type="html">My Notes</title><subtitle>My Notes</subtitle><author><name>wusher</name></author><entry><title type="html">Unregister Service Workers</title><link href="https://wusher.github.io/myblog/til/blog/2022/09/01/2022-09-01_unregistering-service-workers/" rel="alternate" type="text/html" title="Unregister Service Workers" /><published>2022-09-01T08:01:01+00:00</published><updated>2022-09-01T08:01:01+00:00</updated><id>repo://posts.collection/_posts/2022-09-01_unregistering-service-workers.md</id><content type="html" xml:base="https://wusher.github.io/myblog/til/blog/2022/09/01/2022-09-01_unregistering-service-workers/">&lt;p&gt;A little bit of code to unregister all service workers:&lt;/p&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;navigator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;serviceWorker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;navigator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;serviceWorker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getRegistrations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;registrations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -15,4 +15,38 @@
   &lt;span class=&quot;n&quot;&gt;sign_out&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current_user&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;redirect_to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;alert: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Your account has been deactivated. Account: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>wusher</name></author><category term="rails" /><category term="devise" /></entry><entry><title type="html">Capybara</title><link href="https://wusher.github.io/myblog/cheatsheet/2022/08/08/0000-00-00_cheatsheet_capybara/" rel="alternate" type="text/html" title="Capybara" /><published>2022-08-08T08:01:01+00:00</published><updated>2022-08-08T08:01:01+00:00</updated><id>repo://posts.collection/_posts/0000-00-00_cheatsheet_capybara.md</id><content type="html" xml:base="https://wusher.github.io/myblog/cheatsheet/2022/08/08/0000-00-00_cheatsheet_capybara/">&lt;p&gt;Capybara&lt;/p&gt;</content><author><name>wusher</name></author><category term="cheatsheet" /><category term="cheatsheet" /></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>wusher</name></author><category term="rails" /><category term="devise" /></entry><entry><title type="html">Makefile Help</title><link href="https://wusher.github.io/myblog/til/blog/2022/08/31/2022-08-31_makefile-help/" rel="alternate" type="text/html" title="Makefile Help" /><published>2022-08-31T08:01:01+00:00</published><updated>2022-08-31T08:01:01+00:00</updated><id>repo://posts.collection/_posts/2022-08-31_makefile-help.md</id><content type="html" xml:base="https://wusher.github.io/myblog/til/blog/2022/08/31/2022-08-31_makefile-help/">&lt;p&gt;Not sure where I picked this up, but I always add a help command to my make files:&lt;/p&gt;
+
+&lt;h4 id=&quot;skeleton-file&quot;&gt;Skeleton File&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.PHONY: clean help lint setup start test
+
+help: ## shows the help
+	@grep -E &apos;^[a-zA-Z_-]+:.*?## .*$$&apos; $(MAKEFILE_LIST) | sort | awk &apos;BEGIN {FS = &quot;:.*?## &quot;}; {printf &quot;\033[36m%-30s\033[0m %s\n&quot;, $$1, $$2}&apos;
+
+clean: ## clean the project
+  echo TODO 
+
+lint: ## lint codebase
+  echo TODO 
+
+setup: ## install all deps and configure project
+  echo TODO 
+
+start: ## compile and run the server 
+  echo TODO 
+
+test: ## run the tests 
+  echo TODO 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;output&quot;&gt;Output&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; make 
+clean                          clean the project
+help                           shows the help
+lint                           lint codebase
+setup                          install all deps and configure project
+start                          compile and run the server 
+test                           run the tests 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>wusher</name></author><category term="makefile" /></entry><entry><title type="html">Capybara</title><link href="https://wusher.github.io/myblog/cheatsheet/2022/08/08/0000-00-00_cheatsheet_capybara/" rel="alternate" type="text/html" title="Capybara" /><published>2022-08-08T08:01:01+00:00</published><updated>2022-08-08T08:01:01+00:00</updated><id>repo://posts.collection/_posts/0000-00-00_cheatsheet_capybara.md</id><content type="html" xml:base="https://wusher.github.io/myblog/cheatsheet/2022/08/08/0000-00-00_cheatsheet_capybara/">&lt;p&gt;Capybara&lt;/p&gt;</content><author><name>wusher</name></author><category term="cheatsheet" /><category term="cheatsheet" /></entry></feed>
