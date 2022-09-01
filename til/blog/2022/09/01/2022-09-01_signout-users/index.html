@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Cheat Sheets | My Notes</title>
+<title>Signout Users | My Notes</title>
 
 <meta name="description" content="My Notes" />
 
@@ -40,7 +40,7 @@ setTimeout(() => {
 </script>
 
   </head>
-  <body class="page  antialiased bg-slate-50/50">
+  <body class="post  antialiased bg-slate-50/50">
     <div class="bg-slate-600 text-slate-50 font-medium flex p-4">
   <h1>
     <a href="/myblog/">
@@ -58,56 +58,36 @@ setTimeout(() => {
 </div>
 
     <main>
-      <div>
-  <div>
-<h2 class="mt-6 block text-3xl text-center leading-8 font-extrabold tracking-tight text-slate-700 sm:text-4xl">Cheat Sheets</h2>
+      <div class="relative py-4  overflow-hidden">
+  <div class="relative px-4  lg:px-6">
+    <div class="text-lg max-w-prose mx-auto">
+      <h2>
+        <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-slate-700 sm:text-4xl">Signout Users</span>
+
+      </h2>
+      <div class="flex justify-center mt-4 space-x-4">
+          <span class="tag_badge tag_lg" >
+          rails
+          </span>
+          <span class="tag_badge tag_lg" >
+          devise
+          </span>
+      </div>
+    </div>
+    <div class="mt-4 prose prose-sky prose-2xl  mx-auto">
+      <p>Code to logout deactivated users:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">current_user</span><span class="o">&amp;</span><span class="p">.</span><span class="nf">deactivated_at</span>
+  <span class="n">email</span> <span class="o">=</span> <span class="n">current_user</span><span class="p">.</span><span class="nf">email</span>
+  <span class="n">sign_out</span> <span class="n">current_user</span>
+  <span class="n">redirect_to</span> <span class="n">root_path</span><span class="p">,</span> <span class="ss">alert: </span><span class="s2">"Your account has been deactivated. Account: </span><span class="si">#{</span><span class="n">email</span><span class="si">}</span><span class="s2"> "</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+    </div>
+  </div>
 </div>
 
-<div class="mt-6 max-w-lg mx-auto">
-<ul class="max-w-lg mx-auto text-slate-800 ">
-    <li class="hover:bg-slate-100 bg-yellow-100 rounded-xl ">
-      <a href="/myblog/til/blog/2022/09/01/2022-09-01_signout-users/" class="p-2 flex text-center w-full  block">
-          <span class="tag_badge mr-1">New</span>
-        <span class="font-bold pr-4">
-          2022-09-01
-        </span>
-        <span class="grow text-left">
-        Signout Users
-        </span>
-        <div class="text-center justify-center hidden sm:block">
-            <span class="tag_badge">
-            rails
-            </span>
-            <span class="tag_badge">
-            devise
-            </span>
-        </div>
-      </a>
-    </li>
-    <li class="hover:bg-slate-100  ">
-      <a href="/myblog/til/blog/2022/09/01/2022-09-01_unregistering-service-workers/" class="p-2 flex text-center w-full  block">
-        <span class="font-bold pr-4">
-          2022-09-01
-        </span>
-        <span class="grow text-left">
-        Unregister Service Workers
-        </span>
-        <div class="text-center justify-center hidden sm:block">
-            <span class="tag_badge">
-            pwa
-            </span>
-            <span class="tag_badge">
-            js
-            </span>
-        </div>
-      </a>
-    </li>
-</ul>
-
-</div>
-
-
-</div>
     </main>
 
     <footer>
